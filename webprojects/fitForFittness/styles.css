@@ -1,0 +1,129 @@
+/* Nichole B. 2026 */
+
+/* Default and small screens */
+body {
+    background-color: rgb(208, 208, 208);
+    font-size: 1.2em;
+    color: black;
+    margin: 0%;
+    padding: 0;
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+    /* 
+    NOTE:
+    % means window space!! 
+    vw means screen width - messes with scroll bar!! 
+    */
+
+}
+
+/* Content container, used fluid for smoother scaling */
+.container-fluid {
+    background-color: rgb(237, 230, 216);
+
+    /* Fixes footer riding up on contact page */
+    min-height: 80vh;
+
+}
+
+/* Nav container */
+.menu {
+    background-color: #ffa500;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    /* Visible when small */
+    align-items: stretch;
+
+    font-size: 1.4em;
+    flex-wrap: wrap;
+
+    /* Visible in full screen, added padding. With more menu options, it would better to use space-evenly or space-around. */
+    justify-content: center;
+}
+
+.navLinks {
+    border-bottom: 3px solid #000000;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 3px
+}
+
+.menu a:hover {
+    background-color: #95effa;
+    color: black;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.menu a:active {
+    background-color: #c9edf1;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 3px;
+
+}
+
+/* ____________ */
+/* Order not needed, but implimented for future use when site gets bigger  */
+
+.nav1 {
+    order: 1
+}
+
+.nav2 {
+    order: 2;
+}
+
+/* ____________ */
+
+.addBorder-radius {
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+.text-left {
+    text-align: center;
+}
+
+.table-responsive {
+    background-color: white;
+}
+
+.table {
+    /* Removes space before scroll bar for the table */
+    margin-bottom: 0px;
+}
+
+footer {
+    border-top: dotted 3px grey;
+    text-align: center;
+    font-size: .85em;
+}
+
+@media (min-width: 768px) {
+    
+    .menu {
+        flex-direction: row;
+        border-bottom: 3px solid #000000;
+        padding: 5px;
+    }
+
+    .navLinks {
+        margin-left: 25px;
+        margin-right: 25px;
+        border: none;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 15px;
+    }
+}
+
+
+@media(min-width: 1200px) {
+    .text-left {
+        text-align: left;
+    }
+
+}

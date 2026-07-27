@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f3f683af7c.js" crossorigin="anonymous"></script>
+      <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/suitcase.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Revival Woods - Request</title>
+
+    <style>
+        body{
+            background-image: url(images/forest.jpg);
+            object-fit: cover;
+        }
+    </style>
+
+    <!-- Nichole Blachford 2026 -->
+</head>
+
+<body>
+    <nav>
+        <i class="fa-solid fa-tree icon"></i>
+        <a href="index.html">Home</a>
+        <a href="room.html" >Available Rooms</a>
+        <a href="request.html" aria-current="page">Book Today</a>
+    </nav>
+
+    <div id="formcontain">
+        <header>
+            <h1 style="border: 3px solid black;">Request your visit today</h1>
+        </header>
+        <main>
+            <form method="get" action="thankyou.html">
+                <fieldset id="contact">
+
+                    <!-- Getting contact info -->
+                    <legend>Contact Information</legend>
+                    <label for="fname">
+                        First Name:
+                        <input type="text" name="fname" id="fname" placeholder="First Name" autofocus required>
+                    </label>
+
+                    <label for="lname">
+                        Last Name:
+                        <input type="text" name="lname" id="lname" placeholder="Last Name" required>
+                    </label>
+
+                    <label for="email">
+                        Email Address:
+                        <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+                    </label>
+
+                    <label for="phone">
+                        Phone Number:
+                        <input type="tel" name="phone" id="phone" placeholder="(000)-000-0000" required>
+                    </label>
+
+                    <!-- Perfered contact method -->
+                    <label for="contact_method">
+                        Preferred contact method:
+
+                        <select name="contact_method" id="contact_method"
+                            style="margin-left: 10px; min-width:70px; width: 4.9vw;">
+                            <option value="email">Email</option>
+                            <option value="call">Call</option>
+                            <option value="text">Text</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <br>
+
+                <!-- INTERESTS -->
+                <fieldset class="select">
+                    <legend>What services are you intrested in?</legend>
+
+                    <label for="pool">
+                        <input type="checkbox" id="pool" name="pool">
+                        Pool Swimming
+                    </label>
+
+                    <label for="trail">
+                        <input type="checkbox" id="trail" name="trail">
+                        Hiking Trail
+                    </label>
+
+                    <label for="tour">
+                        <input type="checkbox" id="tour" name="tour">
+                        Nature Tour
+                    </label>
+
+                    <label for="starGaze">
+                        <input type="checkbox" id="starGaze" name="starGaze">
+                        Star Gazing
+                    </label>
+
+                    <label for="fishing">
+                        <input type="checkbox" id="fishing" name="fishing">
+                        Fishing
+                    </label>
+                </fieldset>
+
+
+                <br>
+                <!-- AVAILABILITY -->
+                <fieldset class="select">
+
+                    <legend>Availability</legend>
+                    <label for="weekends">
+                        <input type="radio" name="availability" id="weekends" value="weekends">
+                        Weekends
+                    </label>
+
+                    <label for="weekdays">
+                        <input type="radio" name="availability" id="weekdays" value="weekdays">
+                        Weekdays
+                    </label>
+
+                    <label for="holidays">
+                        <input type="radio" name="availability" id="holidays" value="holidays">
+                        Holidays
+                    </label>
+                </fieldset>
+
+
+                <input class="submit" type="submit" value="Submit">
+            </form>
+        </main>
+
+        <!-- Makes up for spacing around submit box -->
+        <br><br><br><br>
+
+    </div>
+
+    <footer>
+        <p> For any questions please contact us at:
+            <br>
+            <i class="fa-regular fa-envelope"></i><a href="mailto:example@gmail.com"> Revivalwoodsrentals@gmail.com</a>
+
+        </p>
+
+        <p><i class="fa-solid fa-location-dot" style="height: 15px;"></i> 2000 Lake Wood Drive, West Virginia
+            <br>&#169; Nichole B. 2026
+        </p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <script>
+    function printQuery() {
+      var query = window.location.search.substring(1);
+      var vars = query.split("&");
+
+      for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split("=");
+        document.write(pair[0] + ": " + pair[1] + "<br />");
+      }
+    }
+  </script>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="images/suitcase.png">
+
+  <script src="https://kit.fontawesome.com/f3f683af7c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>Thank you!</title>
+
+  <style>
+    body {
+      background-image: url(images/forest4.jpg);
+      object-fit: cover;
+    }
+  </style>
+  <!-- Nichole Blachford 2026 -->
+</head>
+
+<body>
+  <nav>
+    <i class="fa-solid fa-tree icon"></i>
+    <a href="index.html" aria-current="page">Home</a>
+    <a href="room.html">Available Rooms</a>
+    <a href="request.html">Book Today</a>
+  </nav>
+
+
+  <div id="thankyou">
+    <h1 style="background-color: #ffffffee; border-radius: 5px 5px 0px 0px;">Your info have been saved</h1>
+    <h2>Thank you for requesting an appt! We will be in touch soon!</h2>
+
+    <script>
+      printQuery();
+    </script>
+    <br>
+  </div>
+
+  <footer style=" position: fixed; bottom:0px; width:100%;">
+    <p> For any questions please contact us at:
+      <br>
+      <i class="fa-regular fa-envelope"></i><a href="mailto:example@gmail.com"> Revivalwoodsrentals@gmail.com</a>
+
+    </p>
+
+    <p><i class="fa-solid fa-location-dot" style="height: 15px;"></i> 2000 Lake Wood Drive, West Virginia
+      <br>&#169; Nichole B. 2026
+    </p>
+  </footer>
+</body>
+
+
+
+
+</html>

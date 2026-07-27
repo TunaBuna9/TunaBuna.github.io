@@ -1,0 +1,92 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-size: 1.1em;
+    background-color: #bdefc7;
+}
+
+header{
+   font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #f0d08f;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+header h1{
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 2px;
+}
+
+main {
+    background-color: white;
+}
+
+footer {
+    border-top: 2px dotted grey;
+}
+
+.card-space {
+    padding: 2%;
+}
+
+.larger {
+    font-size:1.25em;
+}
+
+nav {
+    background-color: #bdefc7;
+}
+
+.dropdown-bg {
+    background-color: #e0ece3;
+
+}
+
+section {
+    margin-bottom: 3%;
+}
+
+section h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.card-body p {
+    padding: 3%;
+}
+
+.indent {
+    text-indent: 3rem;
+}
+
+.caption-text-bg {
+    background-color: rgba(0, 0, 0, 0.727);
+    border-radius: 15px;
+}
+
+
+@media (min-width: 992px) {
+    .carousel-limit {
+        width: 70%;
+        margin: auto;
+        max-height: 75vh;
+    }
+
+    section h2 {
+        text-align: left;
+    }
+
+    .carousel-limit img {
+        max-height: 75vh;
+        object-fit: cover;
+    }
+
+    .title-text {
+        width: 70%;
+        margin: auto;
+    }
+
+
+}

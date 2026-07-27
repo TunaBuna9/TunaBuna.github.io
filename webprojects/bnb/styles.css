@@ -1,0 +1,280 @@
+/* <!-- Nichole Blachford 2026 --> */
+
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Gamja+Flower&family=IM+Fell+English:ital@0;1&family=Imperial+Script&family=Pinyon+Script&family=Rouge+Script&display=swap');
+
+
+/* -------------- */
+/* Form page */
+
+/* Main box to keep everything within the form and seperated from the bg */
+#formcontain {
+    position: relative;
+    background-color: #7d9f8a;
+    color: black;
+    padding: 2%;
+    margin: auto;
+    width: fit-content;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    position: relative;
+    border: 5px solid black;
+}
+
+/* Each item in the formpage */
+label {
+    display: block;
+    padding: 5px;
+    padding-bottom: 4px;
+}
+
+/* Forammting an padding around each form section's area */
+fieldset {
+    width: 25vw;
+    min-width: 400px;
+    border: 3px solid black;
+}
+
+/* Drop down option formatting/alignment */
+#contact input {
+    position: absolute;
+    left: 38%;
+    width: 52%;
+}
+
+/* For slicking selection, puts space between bullet/boxes and the text */
+.select input {
+    margin-right: 10px;
+}
+
+/* Baseline sumbit box formatting- spacing, text, color, ect */
+.submit {
+    background-color: #d8f6d8;
+    width: 200px;
+    height: 50px;
+    font-size: 1.5em;
+    font-weight: normal;
+    text-align: center;
+    position: absolute;
+    margin-top: 15px;
+    left: 30%;
+    border: 3px solid #373737;
+    border-radius: 5px;
+}
+
+/* Submit box when hovered on */
+.submit:hover {
+    background-color: #bbf5bc;
+    font-weight: bold;
+    color: #373737;
+}
+
+/* Adds shadow to boxw when clicking submit */
+.submit:active {
+    box-shadow:  0px 0px 5px black;
+}
+
+/* -------------- */
+/* thank you page */
+
+/* Main box for text + heading, seperated from bg */
+#thankyou{
+    background-color: #7d9f8a;
+    border-radius: 10px;
+    text-align: center;
+    margin: 85px;
+    border:3px solid black;
+    margin-bottom: 148px;
+}
+
+/* -------------- */
+/* Table page */
+
+/* Baseline formmatting, sets back and spacing */
+table {
+    margin: auto;
+    background-color: #d6ddd8;
+    width: 60%;
+    margin-bottom: 60px;
+}
+
+/* All odd rows (after title) are a light grey */
+tr:nth-child(odd){
+    background-color: #cddad0;
+}
+/* All even rows (after title) are a white shade */
+tr:nth-child(even){
+    background-color: #abd3bc;
+}
+
+/* Puts a border around all elements in the table */
+table,
+th,
+td {
+    border: 3px solid black;
+    padding: 10px;
+}
+
+/* -------------- */
+/* Index and general styling*/
+
+/* baseline formatting, bg color, font styleing, and spacing removal */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Cantarell', Arial, Helvetica, sans-serif;
+    background-color: #7d9f8a;
+    color:black;
+    font-size: 18px;
+
+    /* Keeps the scroll bar visible, but cuts the content to the right of it */
+    overflow-y:scroll;
+
+    /* Hides bottom scroll bar and prevent you from scrolling sideways. If you zoom you can still scroll sidewyas!*/
+    overflow-x:hidden;
+}
+
+/* h1 sizing and spacing */
+h1 {
+    font-family: 'Imperial Script', cursive;
+    font-weight: 900;
+    font-size: 48px;
+    background-color: rgba(254, 254, 254, 0.797);
+    text-align: center;
+    padding: 5px;
+    margin-top: 0px;
+}
+
+/* Navigation bar baseline spacing, colors, and desgin */
+nav {
+    font-size: 20px;
+    width: 100vw;
+    height: 30px;
+    text-align: left;
+    padding-bottom: 15px; 
+    padding-top: 15px; 
+    position: sticky;
+    top:0px;
+    z-index: 1;
+    border-bottom: 3px solid black ;
+    background-color: rgb(185, 205, 211);
+}
+
+/* Default link style within navigation  */
+nav a {
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+    color: #083d04;
+}
+
+/* Navigation links when hovering on effects */
+nav a:hover {
+    background-color: rgb(195, 249, 216);
+    border-radius: 15px;
+    color: #12470e;
+    text-decoration: underline;
+    text-decoration-thickness: 2px ;
+}
+
+/* Navigation links when clicking on effects*/
+nav a:active{
+    color:#20489d;
+    background-color: #bfffea;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 3px ;
+}
+
+/* All other links default*/
+a{
+    color: #153d94;
+}
+
+/* Other links when hovering */
+a:hover{
+    color: #15223e;
+    background-color: #e8ffec;
+    border-radius: 5px;
+}
+
+/* Regular links whne clicking */
+a:active{
+    text-decoration-style: dotted;
+    text-decoration-thickness: 3px ;
+}
+
+/* BAnner img formatting from home page */
+#banner{
+    width: 100vw;
+    height: 55vh;
+    object-fit:cover;
+    position: relative;
+    border-bottom: 3px solid black ;
+}
+
+/* Text postistioning on the img banner (code above) */
+#bannerText{
+    position: absolute;
+    top: 25%;
+    left:25%;
+    right: 25%;
+    background-color: #ffffffa2;
+    border-radius: 25px;
+    
+}
+
+/* Allows aside images on the home page to scale without blurring, float text, and space correctly*/
+.squaredimg1{
+    width: 250px;
+    height: auto;
+    max-height: 250px;
+    float: left;
+    margin-right: 15px;
+    border: 3px solid black;
+    object-fit: cover;
+}
+
+/* Extra padding for the aside images and the body on home page */
+#padding-extend{
+    margin: 0px;
+    padding: 70px;
+}
+
+/* Sapces the aside text on the homepage by putting extra space between the images */
+#padding-extend p, h2{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Adds underline to only h2 headers within the padding-extended box */
+#padding-extend h2{
+    padding-top:15px;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+/* Clears the float property */
+.floatClear{
+    clear:both;
+}
+
+/* Changes bg color, provides seperation between itself and the page content, and formats the text */
+footer{
+    border-top: 2px dotted #2a2a2a;
+    text-align: center;
+    color: #2a2a2a;
+    background-color: #99bba7;
+    padding-bottom: 5px;
+
+   
+}
+
+/* -------------- */
+/* Icon */
+
+/* Changes the color and spacing of the icon in the navbar */
+.icon{
+    margin-left: 15px ;
+    color:#083d04
+}
