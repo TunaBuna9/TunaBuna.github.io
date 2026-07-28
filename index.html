@@ -30,9 +30,11 @@
 
 <body>
     <nav>
-        <nav class="navbar navbar-expand-md">
+        <nav class="navbar navbar-expand-md bg-dark " data-bs-theme="dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">Nichole B.</a>
+
+                <img src="images/bird.jpg" alt="" width="40px" style="margin-right: 10px;">
+                <a class="navbar-brand" href="index.html" aria-current="page"> Nichole B.</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -40,9 +42,6 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#about_me">About Me</a>
                         </li>
@@ -52,7 +51,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                Website Portfolio
+                                My Portfolio
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#portfolio">See all</a></li>
@@ -60,223 +59,259 @@
                                 <li><a class="dropdown-item" href="#fitness4fun">Fitness for Fun</a></li>
                                 <li><a class="dropdown-item" href="#popcorning_piggies">Popcorning Piggies</a></li>
 
-                                <li class="nav-item">
 
-                                </li>
                             </ul>
                         </li>
 
-                        <a class="nav-link" href="#accordian-tab">accordian-tab</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#accordian-tab">Accordian</a>
+                        </li>
+
+                        <!-- <a class="nav-link" href="#accordian-tab">accordian-tab</a> -->
                     </ul>
                 </div>
             </div>
         </nav>
     </nav>
-    <main class="container-fluid ps-5 pe-5">
+
+
+    <main>
         <header>
             <div class="bg-head">
-                <h1>Nichole Blachford </h1>
-                <p>Creativity is in your hands</p>
+                <div class="h-textbox">
+                    <div class="h-shade">
+                        <h1>Nichole Blachford </h1>
+
+                        <p>Creativity is in your hands</p>
+                    </div>
+                </div>
             </div>
 
             <!-- <img src="images/bird.jpg" alt=""> -->
         </header>
+        <div class="container-fluid ps-5 pe-5">
 
 
-        <!-- Intro -->
-        <section id="about_me" class="a-link text-center">
-            <h2>About Me</h2>
 
-            <div class="row">
-                <div class="col-xs-12 col-lg-6">
-                    <div class="card h-100">
-                        <div class="card-header">
-                            <h3>History</h3>
-                        </div>
-                        <div class="card-body"> <img src="images/bird.jpg" alt="" class="card-img-top card-images">
-                            <p class="card-text-alignment">
-                                My entire life I’ve had an infatuation with all things tech. I’d sit with my dad for
-                                hours at a time and watch him build programs from scratch, completely mesmerized by the
-                                walls of text I didn’t understand. That passion stayed with me, even as I got older,
-                                leading me to discover several indie developers that introduced me to an open-source
-                                software, called Ren’py. I immediately downloaded it and spent months pouring over the
-                                documentation, trying to make something of my own. That single program kickstarted my
-                                coding journey and from there I started learning all sorts of programs such as RPG Maker
-                                and Game Maker. I dabbled with so many different languages, including python,
-                                javascript, ruby, and c#, that it quickly became a challenge to learn as many and as
-                                much of them as I could. This led me to discover html. Following youtube tutorials, q&a
-                                forums, and w3Schools, I made my first website to organize some notes and was mesmerized
-                                by how it worked. It felt like a gateway to show everything else I’d learned over the
-                                years and slowly became my favorite, leading me to where I am today.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            <!-- Intro -->
+            <section id="about_me" class="a-link text-center">
+                <h2>About Me</h2>
 
-
-                <div class="col-xs-12 col-lg-6 card-spacing">
-                    <div class="card h-100">
-                        <div class="card-header">
-                            <h3>Education</h3>
-                        </div>
-                        <div class="card-body"><img src="images/bird.jpg" alt="" class="card-img-top card-images">
-
-                            <p class="card-text-alignment">
-
-                                I started my formal education for coding back in high school, taking my first class and
-                                learning React Native, a programming framework developed by Meta that focuses on
-                                building apps for mobile devices. I absolutely loved the coding process and ended up
-                                signing up for two other coding classes the next year, Python and Web Development.
-                                During my senior year of high school, my school reached out and offered to pay the
-                                certification fees for both classes to which I accepted. I ended up passing both, ending
-                                up with two certifications before I’d even graduated. Throughout the remainder of the
-                                school year I made several personal projects and read through the documentation to learn
-                                more.
-                                Now, I am currently working through the Web Development Certificate at Ozark Technical
-                                College, in the hopes of learning new things and streamlining my current workflow.
-
-                            </p>
+                <div class="row">
+                    <div class="col-xs-12 col-lg-6">
+                        <div class="card h-100">
+                            <div class="card-header">
+                                <h3>History</h3>
+                            </div>
+                            <div class="card-body"> <img src="images/bird.jpg" alt="" class="card-img-top card-images">
+                                <p class="card-text-alignment">
+                                    My entire life I’ve had an infatuation with all things tech. I’d sit with my dad for
+                                    hours at a time and watch him build programs from scratch, completely mesmerized by
+                                    the
+                                    walls of text I didn’t understand. That passion stayed with me, even as I got older,
+                                    leading me to discover several indie developers that introduced me to an open-source
+                                    software, called Ren’py. I immediately downloaded it and spent months pouring over
+                                    the
+                                    documentation, trying to make something of my own. That single program kickstarted
+                                    my
+                                    coding journey and from there I started learning all sorts of programs such as RPG
+                                    Maker
+                                    and Game Maker. I dabbled with so many different languages, including python,
+                                    javascript, ruby, and c#, that it quickly became a challenge to learn as many and as
+                                    much of them as I could. This led me to discover html. Following youtube tutorials,
+                                    q&a
+                                    forums, and w3Schools, I made my first website to organize some notes and was
+                                    mesmerized
+                                    by how it worked. It felt like a gateway to show everything else I’d learned over
+                                    the
+                                    years and slowly became my favorite, leading me to where I am today.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Values -->
-        <section class="a-link" id="values">
-            <h2 class="text-center">My values</h2>
-            <div>
-
-            </div>
-
-            <div>
-                <h3>No Ai</h3>
-                <p>Text box about ai</p>
-            </div>
-
-            <div>
-                <h3>No Ai</h3>
-                <p>Text box about ai</p>
-            </div>
-        </section>
-
-        <!-- Accordians -->
-        <section class="accordian-spacing a-link" id="accordian-tab">
-
-            <h2 class="text-center">ACORDIAN TAB</h2>
-            <!-- Accordian 1 -->
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                            No Ai
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <!-- TEXT -->
-                            no ai blaha lsdfs
-
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Accordian 2 -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Work Ethic
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            dnfgkdnfgendg
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Accordian 3 -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Somethin
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            jhav kjsafbjhvhbf
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Portfolio -->
-        <section id="portfolio" class="a-link">
-            <h2 class="text-center">Portfolio Highlights</h2>
-
-            <div class="row">
-                <div class="col-xs-6 col-lg-4 card-spacing link-center">
-                    <div class="card h-100">
-                        <div class="card-body a-link" id="revival_woods">
-                            <h3 class="card-title">Revival Woods Rentals</h3>
-                            <p class="card-text">This is a website for a fictional bed and breakfast inspired resort
-                                called <i>Revival Woods</i>. This project focused mainly on navigation, tables, and form
-                                use, without the use bootstrap.
-                            </p>
-
-                        </div>
-                        <div class="card-footer">
-                            <a href="webprojects/bnb/" class="btn btn-success" target="_blank">Click to visit
-                                website</a>
-
-                        </div>
-                    </div>
-                </div>
 
 
-                <div class="col-xs-6 col-lg-4 card-spacing link-center">
-                    <div class="card h-100">
-                        <div class="card-body a-link" id="fitness4fun">
-                            <h3 class="card-title ">Fitness for Fun</h3>
-                            <p class="card-text">This is a website for a fictional fitness club, seeking to get new
-                                members to join various workout sessions. The main focuse on this project was to get
-                                used to wokring with bootstrap and work on making mobile-focused websites.
-                            </p>
+                    <div class="col-xs-12 col-lg-6 card-spacing">
+                        <div class="card h-100">
+                            <div class="card-header">
+                                <h3>Education</h3>
+                            </div>
+                            <div class="card-body"><img src="images/bird.jpg" alt="" class="card-img-top card-images">
 
-                        </div>
-                        <div class="card-footer">
-                            <a href="webprojects/fitForFittness/" target="_blank" class="btn btn-success">Click to visit
-                                website</a>
+                                <p class="card-text-alignment">
+
+                                    I started my formal education for coding back in high school, taking my first class
+                                    and
+                                    learning React Native, a programming framework developed by Meta that focuses on
+                                    building apps for mobile devices. I absolutely loved the coding process and ended up
+                                    signing up for two other coding classes the next year, Python and Web Development.
+                                    During my senior year of high school, my school reached out and offered to pay the
+                                    certification fees for both classes to which I accepted. I ended up passing both,
+                                    ending
+                                    up with two certifications before I’d even graduated. Throughout the remainder of
+                                    the
+                                    school year I made several personal projects and read through the documentation to
+                                    learn
+                                    more.
+                                    Now, I am currently working through the Web Development Certificate at Ozark
+                                    Technical
+                                    College, in the hopes of learning new things and streamlining my current workflow.
+
+                                </p>
+                            </div>
                         </div>
                     </div>
 
                 </div>
+            </section>
 
-                <div class="col-xs-12 col-lg-4 card-spacing link-center">
-                    <div class="card h-100">
-                        <div class="card-body a-link" id="popcorning_piggies">
-                            <h3 class="card-title">Special title treatment</h3>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                            </p>
+            <!-- Values -->
+            <section class="a-link" id="values">
+                <h2 class="text-center">My values</h2>
+                <div>
 
+                </div>
+
+                <div>
+                    <h3>No Ai</h3>
+                    <p>Text box about ai</p>
+                </div>
+
+                <div>
+                    <h3>No Ai</h3>
+                    <p>Text box about ai</p>
+                </div>
+            </section>
+            
+            <!-- Portfolio -->
+            <section id="portfolio" class="a-link">
+                <h2 class="text-center">Portfolio Highlights</h2>
+
+                <div class="row">
+                    <!-- Revival Woods -->
+                    <div class="col-xs-12 col-md-6 col-lg-4 card-spacing link-center">
+                        <div class="card h-100">
+                            <div class="card-body a-link" id="revival_woods">
+                                <img src="webprojects/bnb/images/kitchen.jpg" class="card-img-top max-card-height mb-3"
+                                    alt="...">
+                                <h3 class="card-title">Revival Woods Rentals</h3>
+                                <p class="card-text">This is a website for a fictional bed and breakfast inspired resort
+                                    called <i>Revival Woods</i>. This project focused mainly on navigation, tables, and
+                                    form
+                                    use, without the use bootstrap.
+                                </p>
+
+                            </div>
+                            <div class="card-footer">
+                                <a href="webprojects/bnb/" class="btn btn-success" target="_blank">Click to visit
+                                    website</a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fitness for fun -->
+                    <div class="col-xs-12 col-md-6 col-lg-4 card-spacing link-center">
+                        <div class="card h-100">
+                            <div class="card-body a-link" id="fitness4fun">
+                                <img src="webprojects/fitForFittness/images/workout.png"
+                                    class="card-img-top max-card-height mb-3" alt="...">
+                                <h3 class="card-title ">Fitness for Fun</h3>
+                                <p class="card-text">This is a website for a fictional fitness club, seeking to get new
+                                    members to join various workout sessions. The main focus on this project was to get
+                                    used to wokring with bootstrap and work on making mobile-focused websites.
+                                </p>
+
+                            </div>
+                            <div class="card-footer">
+                                <a href="webprojects/fitForFittness/" target="_blank" class="btn btn-success">Click to
+                                    visit
+                                    website</a>
+                            </div>
                         </div>
 
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-success ">Go somewhere</a>
+                    </div>
+
+                    <div class="col-xs-12 col-md-6 col-lg-4 card-spacing link-center">
+                        <div class="card h-100">
+                            <div class="card-body a-link" id="popcorning_piggies">
+                                <img src="webprojects/popcorningPiggies/images/brush1.png"
+                                    class="card-img-top max-card-height mb-3" alt="...">
+                                <h3 class="card-title ">Popcorning Piggies</h3>
+                                <p class="card-text">This is a website for a fictional guinea pig boarding service. This
+                                    project focused on working with a grid based webpage and practicing more bootstrap
+                                    elements.
+                                </p>
+
+                            </div>
+                            <div class="card-footer">
+                                <a href="webprojects/popcorningPiggies/" target="_blank" class="btn btn-success">Click
+                                    to
+                                    visit
+                                    website</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+            <!-- Accordians -->
+            <section class="accordian-spacing a-link" id="accordian-tab">
+
+                <h2 class="text-center">ACORDIAN TAB</h2>
+                <!-- Accordian 1 -->
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                No Ai
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <!-- TEXT -->
+                                no ai blaha lsdfs
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordian 2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Work Ethic
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                dnfgkdnfgendg
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordian 3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Somethin
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                jhav kjsafbjhvhbf
+                            </div>
                         </div>
                     </div>
                 </div>
+            </section>
 
-            </div>
-        </section>
-
-
-        <br>
+            <br>
+        </div>
     </main>
 
     <footer class="container-fluid">
