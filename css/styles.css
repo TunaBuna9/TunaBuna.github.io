@@ -68,7 +68,7 @@ header h1 {
 }
 
 .bg-head {
-    background-image: url(images/colorbg.jpg);
+    background-image:url(../images/colorbg.jpg);
     background-position: 70% 40%;
     color: white;
     font-weight: bolder;
