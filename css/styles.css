@@ -28,8 +28,10 @@ nav {
 .icon-display{
     display: none;
     margin-right: 5px;
+    margin-left: 5px;
     width: 40px;
 }
+
 /* Navbar kept offsetting the on page links, this was a fix I found online */
 /* Creates an invisible space that the page can jump to without changing anything formatting wise */
 .a-link:before {
@@ -42,7 +44,6 @@ nav {
 
 /* Header/banner */
 header {
-    /* text-align: center; */
     margin: 0px;
     text-align: center;
     width: 100%;
@@ -161,12 +162,13 @@ footer {
         display: block;
     }
 
-    .icon-display{
-        display: block;
-    }
 }
 
 @media (min-width:992px) {
+    .icon-display{
+        display: block;
+    }
+
     .card-images {
         display: block;
     }
